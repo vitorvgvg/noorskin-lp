@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProLightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProBook.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProBookItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FreightNeo Pro";
+  src: url("./assets/fonts/FreightNeoProSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Freight Sans";
+  src: url("./assets/fonts/FreightSansBook.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Freight Sans";
+  src: url("./assets/fonts/FreightSansBookItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Freight Sans";
+  src: url("./assets/fonts/FreightSansMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-noor-black: #22211f;
+  --color-noor-cream: #fff9f4;
+  --color-noor-brown: #3d3935;
+  --color-noor-terracotta: #bd8457;
+  --color-noor-terracotta-dark: #975d38;
+
+  --font-display: "FreightNeo Pro", "Fraunces", "Georgia", serif;
+  --font-sans: "Freight Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --text-h2: 64px;
+  --text-h2--line-height: 68px;
+  --text-body-lg: 24px;
+  --text-body-lg--line-height: 26px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-noor-cream);
+  color: var(--color-noor-brown);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-noor-terracotta);
+  outline-offset: 2px;
+}
