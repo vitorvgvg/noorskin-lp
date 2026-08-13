@@ -1,16 +1,53 @@
-# React + Vite
+# Noorskin — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page da Noorskin, marca de cosméticos naturais focada em nutrição capilar e cuidados com a pele.
 
-Currently, two official plugins are available:
+Desenvolvida com fidelidade ao design no Figma, mobile-first, com HTML5 semântico e boas práticas de acessibilidade e SEO técnico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- **React** + **Vite**
+- **Tailwind CSS v4**
+- Fontes customizadas: FreightNeo Pro e Freight Sans
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Seções
 
-## Expanding the Oxlint configuration
+- Header com navegação e menu mobile
+- Hero — "Renasça com nutrição"
+- Living in Consciousness — carrossel de produtos
+- Informação Nutricional — accordion
+- Banner — "Sua força vem de dentro"
+- Avaliações — carrossel de reviews
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Rodando o projeto
+
+```bash
+npm install
+npm run dev
+```
+
+O site fica disponível em `http://localhost:5173`.
+
+### Testar no celular
+
+Com o servidor rodando, use:
+
+```bash
+npm run dev -- --host
+```
+
+E acesse pelo celular (na mesma rede Wi-Fi) o endereço `Network` exibido no terminal.
+
+## Build de produção
+
+```bash
+npm run build
+```
+
+Os arquivos finais ficam em `dist/`.
+
+## Lint
+
+```bash
+npm run lint
+```
