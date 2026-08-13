@@ -4,6 +4,7 @@ import LivingInConsciousness from "./components/LivingInConsciousness";
 import NutritionalInfo from "./components/NutritionalInfo";
 import Banner from "./components/Banner";
 import Reviews from "./components/Reviews";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Banner />
         <Reviews />
       </main>
+      <Footer />
     </>
   );
 }
